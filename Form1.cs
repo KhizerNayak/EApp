@@ -1,8 +1,8 @@
 namespace EApp
 {
-    public partial class Form1 : Form
+    public partial class Electricity_App : Form
     {
-        public Form1()
+        public Electricity_App()
         {
             InitializeComponent();
         }

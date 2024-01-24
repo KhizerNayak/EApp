@@ -1,6 +1,6 @@
 ﻿namespace EApp
 {
-    partial class Form1
+    partial class Electricity_App
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,10 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            SuspendLayout();
+            // 
+            // Electricity_App
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            BackColor = SystemColors.ControlDark;
+            ClientSize = new Size(1003, 450);
+            Name = "Electricity_App";
+            Padding = new Padding(2);
+            ShowIcon = false;
+            Text = "Electricity App";
+            ResumeLayout(false);
         }
 
         #endregion
