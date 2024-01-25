@@ -65,10 +65,10 @@
             // UnitEntry
             // 
             UnitEntry.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            UnitEntry.Location = new Point(317, 123);
+            UnitEntry.Location = new Point(317, 133);
             UnitEntry.Name = "UnitEntry";
             UnitEntry.PlaceholderText = "UNIT";
-            UnitEntry.Size = new Size(279, 27);
+            UnitEntry.Size = new Size(339, 27);
             UnitEntry.TabIndex = 3;
             UnitEntry.TextAlign = HorizontalAlignment.Center;
             UnitEntry.TextChanged += UnitEntry_TextChanged;
@@ -94,7 +94,7 @@
             UnitMeasuring.BackColor = Color.Coral;
             UnitMeasuring.FlatAppearance.BorderColor = Color.FromArgb(64, 64, 64);
             UnitMeasuring.FlatAppearance.BorderSize = 3;
-            UnitMeasuring.Location = new Point(343, 176);
+            UnitMeasuring.Location = new Point(391, 232);
             UnitMeasuring.Name = "UnitMeasuring";
             UnitMeasuring.Padding = new Padding(2);
             UnitMeasuring.Size = new Size(185, 44);
@@ -127,7 +127,7 @@
 
         #endregion
 
-        
+
         private Label lblshow;
         private Label lblResult;
         private TextBox UnitEntry;

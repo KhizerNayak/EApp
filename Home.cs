@@ -14,8 +14,8 @@ namespace EApp
 {
     public partial class Home : Form
     {
-        int UserUnit;
-        
+        float UserUnit; //To Take Unit as an input
+        double Measure; //To Measure unit with Rs
 
         public Home()
         {
@@ -26,7 +26,7 @@ namespace EApp
         private void UnitEntry_TextChanged(object sender, EventArgs e)
         {
             // Try to convert the text to an integer
-        bool success = int.TryParse(UnitEntry.Text, out UserUnit);
+        bool success = float.TryParse(UnitEntry.Text, out UserUnit); //This thing needed to be understand
             // If the conversion failed, show an error message
             if (!success)
             {
@@ -47,23 +47,28 @@ namespace EApp
                     {
                         // Assign the text to the label
                         lblshow.Visible = true;
-                        lblshow.Text = UnitEntry.Text;
+                        
+                        Measure = UserUnit * 2.5;
+                        lblshow.Text = Measure.ToString();
                         
                     }
-                    else if (UserUnit > 100 || UserUnit < 200)
+                    else if (UserUnit >= 100 && UserUnit <= 200)
                     {
                         lblshow.Visible = true;
-                        lblshow.Text = UnitEntry.Text;
+                        Measure = UserUnit * 4;
+                        lblshow.Text = Measure.ToString();
                     }
-                    else if (UserUnit > 200 || UserUnit < 300)
+                    else if (UserUnit >= 200 && UserUnit <= 500)
                     {
                         lblshow.Visible = true;
-                        lblshow.Text = UnitEntry.Text;
+                        Measure = UserUnit * 5;
+                        lblshow.Text = Measure.ToString();
                     }
-                    else if (UserUnit > 300)
+                    else if (UserUnit > 500)
                     {
                         lblshow.Visible = true;
-                        lblshow.Text = UnitEntry.Text;
+                        Measure = UserUnit * 7;
+                        lblshow.Text = Measure.ToString();
                     };
                 }
 
