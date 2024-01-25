@@ -30,7 +30,7 @@ namespace EApp
             // If the conversion failed, show an error message
             if (!success)
             {
-                MessageBox.Show("Please enter a Unit.");
+                MessageBox.Show("Please enter a Unit in No.");
             }
         }
 
